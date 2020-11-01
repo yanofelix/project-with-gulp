@@ -9,8 +9,9 @@ function depsCSS(){
         .pipe(gulp.dest('build/assets/css'))
 }
 
-function depsFonts(callback){
-    return callback()
+function depsFonts(){
+    return gulp.src('node_modules/font-awesome/fonts/*.*')
+        .pipe(gulp.dest('build/assets/fonts'))
 }
 
 module.exports = {
