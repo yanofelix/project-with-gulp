@@ -33,6 +33,11 @@ function appIMG(){
         .pipe(gulp.dest('build/assets/imgs'))
 }
 
+gulp.task('appHTML', appHTML)
+gulp.task('appJS', appJS)
+gulp.task('appCSS', appCSS)
+gulp.task('appIMG', apIMGL)
+
 module.exports = {
     appHTML,
     appCSS,
